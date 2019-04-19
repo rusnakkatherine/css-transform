@@ -1,7 +1,48 @@
 .scale{
     height: 30px;
     width: 30px;
-    transform: scaleX(3);
-    transform: scaleY(3);
+   /*transform: scaleX(3);
+    transform: scaleY(3);*/
     margin: 0 auto;;
+}
+.box{
+    background-color: gainsboro;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin: 20px;
+    
+}
+.skew-20{
+    transform: skewX(20deg);
+}
+.skew-neg-20{
+    animation: skew-horizontal 1s infinite;
+    animation-direction: alternate;
+   /* transform: skewX(-20deg);*/
+}
+.skew-y-20{
+    /*transform: skewY(20deg);*/
+    animation: skew-vertical 2s infinite;
+    animation-direction: alternate;
+    
+
+}
+@keyframes skew-horizontal{
+    0%{
+        transform: skewX(20deg);
+    }
+    100%{
+        transform: skewX(-20deg);
+    }
+}
+@keyframes skew-vertical{
+    0%{
+        transform: skewY(20deg);
+        opacity: 1;
+    }
+    100%{
+        transform: skewY(-20deg);
+        opacity: .5;
+    }
 }
