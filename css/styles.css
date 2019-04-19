@@ -1,0 +1,7 @@
+.scale{
+    height: 30px;
+    width: 30px;
+    transform: scaleX(3);
+    transform: scaleY(3);
+    margin: 0 auto;;
+}
